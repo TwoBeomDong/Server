@@ -4,11 +4,7 @@ import java.time.LocalDate;
 
 import user.Employee;
 
-/**
- * @author dongyeonkim
- * @version 1.0
- * @created 14-5-2024 ���� 6:43:15
- */
+
 public class StatusChangeInfo {
 	private InsuranceStatus insuranceStatus;
 	private Employee personInCharge;

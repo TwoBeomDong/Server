@@ -36,7 +36,7 @@ public class BasicInsuranceInfo {
 	}
 
 	public String toString() {
-		String retStr = "";
+		String retStr = "********** 기본보험정보 **********\n";
 		retStr += "보험명\t: "+this.name+"\n";
 		retStr += "보험종목\t: "+this.type.getName()+"\n";
 		retStr += "계약단위\t: "+this.termPeriod.getName()+"\n";

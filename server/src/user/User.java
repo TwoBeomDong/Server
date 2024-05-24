@@ -10,6 +10,7 @@ public class User {
 
 	private String id;
 	private String password;
+	private Authority authority;
 
 	public User(){
 
@@ -29,6 +30,17 @@ public class User {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	
+	public Authority getAuthority() {
+		return this.authority;
+	}
+	public void setAuthority(Authority authority) {
+		this.authority = authority;
+	}
+	
+	public boolean equals(String id) {
+		return this.id.equals(id);
 	}
 
 	public void finalize() throws Throwable {

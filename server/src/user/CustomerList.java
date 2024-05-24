@@ -21,10 +21,6 @@ public class CustomerList {
 		test.setPaymentBankAccount(12345678);
 	}
 
-	public void finalize() throws Throwable {
-
-	}
-
 	public Vector<Customer> getCustomerList(){
 		return this.customerList;
 	}
@@ -33,5 +29,14 @@ public class CustomerList {
 	}
 	public boolean deleteCustomer(String id) {
 		return true;
+	}
+	public boolean checkPassword(String id, String password) {
+		Customer e = this.getCustomer(id);
+		return e.getPassword().equals(password);
+	}
+	public Customer getCustomer(String id) {
+		for(Customer c : this.customerList)
+			if(c.equals(id)) return c;
+		return null;
 	}
 }

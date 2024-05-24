@@ -1,12 +1,13 @@
 package server;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.rmi.Naming;
 import java.rmi.RemoteException;
 
 public class SMain {
 	
-	public static void main(String[] args) {	
+	public static void main(String[] args) throws SecurityException, IOException {	
 		try {
 			Server server = new Server();
 			Naming.rebind("Server", server);

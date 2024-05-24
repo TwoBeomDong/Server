@@ -21,10 +21,6 @@ public class EmployeeList {
 		this.employeeList.add(test);
 	}
 
-	public void finalize() throws Throwable {
-
-	}
-
 	public Vector<Employee> getEmployeeList(){
 		return this.employeeList;
 	}
@@ -33,5 +29,14 @@ public class EmployeeList {
 	}
 	public boolean deleteEmployee(String id) {
 		return true;
+	}
+	public boolean checkPassword(String id, String password) {
+		Employee e = this.getEmployee(id);
+		return e.getPassword().equals(password);
+	}
+	public Employee getEmployee(String id) {
+		for(Employee e : this.employeeList)
+			if(e.equals(id)) return e;
+		return null;
 	}
 }

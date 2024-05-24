@@ -8,6 +8,7 @@ public enum ServerMessage {
 	Password_different("비밀번호가 다릅니다."),
 	
 	Insurance_register_complete("보험 등록이 정상적으로 요청되었습니다. 관리자 승인 이후 금융감독원으로 인계됩니다."),
+	Insurance_deny_complete("보험 승인이 정상적으로 거부되었습니다."),
 	Insurance_approve_admin_complete("정상적으로 승인되었습니다."),
 	Standard_rate_decide_complete("요율이 정상적으로 확정되었습니다."),
 	Standard_rate_decide_failed("해당 보험은 이미 요율이 확정되었습니다."),
